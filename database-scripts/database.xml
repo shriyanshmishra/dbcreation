@@ -1,0 +1,241 @@
+<database>
+    <credential>
+        <host>${DB_GLOBAL_HOST}</host>
+        <port>${DB_GLOBAL_PORT}</port>
+        <database>${DB_GLOBAL_DATABASE}</database>
+        <username>${DB_GLOBAL_USERNAME}</username>
+        <password>${DB_GLOBAL_PASSWORD}</password>
+    </credential>
+    <sequence>
+        <files>
+            <path active="true">
+                database-scripts/meta-scripts/database-clean-up.sql
+            </path>
+            <path active="true">
+                database-scripts/meta-scripts/database.sql
+            </path>
+            <path active="true">
+                database-scripts/meta-scripts/production-schema.sql
+            </path>
+            <path active="false">
+                database/sandbox_schema_1.sql
+            </path>
+            <path active="false">
+                database/sandbox_schema_2.sql
+            </path>
+            <path active="false">
+                database/sandbox_schema_3.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/user-scripts/user.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/entity_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/column_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/picklist-scripts/picklist_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/lookup-scripts/lookup_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/sandbox-scripts/sandbox_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/view-scripts/view_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/tab-scripts/tab_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/report-scripts/report_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/privilege-scripts/privilege_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/privilege-scripts/system_privilege_master_meta.sql
+            </path>
+            <path active="false">
+                database/entity_privilege_master_meta.sql
+            </path>
+            <path active="false">
+                database/column_privilege_master_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/privilege-scripts/system_privilege_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/entity_privilege_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/column_privilege_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/role-scripts/role_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/user-scripts/user_role_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/activity-scripts/activity_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/task-scripts/task_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/event-scripts/event_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/other-setting-scripts/other_setting_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/owd-setting-scripts/owd_setting_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/group-member-scripts/public_group_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/sharing-rule-scripts/sharing_rules_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/rule-criteria-scripts/rule_criteria_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/group-member-scripts/group_member_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/login-session-scripts/login_session_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/user-scripts/user_privilege_assignment.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/file-scripts/file_meta.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/functions/create_new_column_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/functions/create_data_table_default_columns_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/functions/validate_column_input.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/user-scripts/functions/platform-invite-user/create_user_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/create_data_table_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/create_entity_share_table_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/create_data_table_and_share_table_views_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/create_data_table_and_share_table_default_view_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/create_data_table_and_share_table_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/insert_into_ddl_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/update_into_ddl_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/delete_from_ddl_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/delete_entity_schema_and_share_table_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/functions/fetch_column_details_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/functions/fetch_column_list_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/fetch_data_from_data_view_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/fetch_data_from_meta_view_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/update_entity_data_table_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/update_entity_share_table_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/update_into_entity_meta_table_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/update_entity_schema_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/update_entity_data_table_and_share_table_views_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/get_entity_details_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/user-scripts/functions/get_user_details.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/user-scripts/functions/platform-login/email_exists_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/Utils/__remove_special_characters.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/response-scripts/functions/get_response_message.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/entity-scripts/functions/delete_entity_data_table_column_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/functions/update_views_before_column_deletion_function.sql
+            </path>
+            <path active="false">
+                database-scripts/meta-scripts/column-scripts/functions/fetch_columns_for_deletion_function.sql
+            </path>
+            <path active="false">
+                database-scripts/data-scripts/initial-setup-scripts/functions/entities-data.sql
+            </path>
+            <path active="false">
+                database/default/views.sql
+            </path>
+            <path active="false">
+                database-scripts/data-scripts/test-scripts/create_session.sql
+            </path>
+            <path active="false">
+                database/default/privileges.sql
+            </path>
+            <path active="false">
+                database/default/privilege_assignment.sql
+            </path>
+            <path active="false">
+                database/default/system_master_privileges.sql
+            </path>
+            <path active="false">
+                database-scripts/data-scripts/test-scripts/create_new_test_entity.sql
+            </path>
+            <path active="false">
+                database-scripts/data-scripts/test-scripts/create_new_test_columns.sql
+            </path>
+            <path active="false">
+                database-scripts/data-scripts/user-data/insert_initial_user_data.sql
+            </path>
+            <path active="false">
+                database-scripts/data-scripts/initial-setup-scripts/insert-initial-master-data.sql
+            </path>
+        </files>
+    </sequence>
+</database>

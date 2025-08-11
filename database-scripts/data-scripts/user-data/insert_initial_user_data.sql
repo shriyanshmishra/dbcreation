@@ -1,0 +1,6 @@
+INSERT INTO production."user" (first_name,last_name,default_role,country,state,city,postal_code,address_line_1,address_line_2,"language",phone,mobile,email,active,last_password_change,time_zone,created_date,last_modified_date,created_by,last_modified_by) VALUES
+('Nitesh','Mali',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'nitesh@cloudsciencelabs.com',false,NULL,NULL,'2025-03-20 21:30:52.115+05:30','2025-03-20 21:30:52.115+05:30',NULL,NULL),
+-- ('Rajeev','Katiyar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'rajeev@cloudsciencelabs.com',false,NULL,NULL,'2025-03-20 21:30:52.115+05:30','2025-03-20 21:30:52.115+05:30',NULL,NULL),
+-- ('Saumya','Pandey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'saumay.intern@cloudsciencelabs.com',false,NULL,NULL,'2025-03-20 21:30:52.115+05:30','2025-03-20 21:30:52.115+05:30',NULL,NULL),
+-- ('Amit','Tiwari',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'amit.intern@cloudsciencelabs.com',false,NULL,NULL,'2025-03-20 21:30:52.115+05:30','2025-03-20 21:30:52.115+05:30',NULL,NULL),
+-- ('Haseen','Saifi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'haseensaifi2004@gmail.com',false,NULL,NULL,'2025-03-20 21:30:52.115+05:30','2025-03-20 21:30:52.115+05:30',NULL,NULL);

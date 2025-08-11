@@ -1,0 +1,34 @@
+name: Database Automation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-db-scripts:
+    name: Run DB Scripts on Main
+    runs-on: ubuntu-latest
+    env:
+      # Map GitHub secrets to the environment variables your script expects
+      DB_HOST: ${{ secrets.DB_HOST }}
+      DB_PORT: ${{ secrets.DB_PORT }}
+      DB_NAME: ${{ secrets.DB_NAME }}
+      DB_USER: ${{ secrets.DB_USER }}
+      DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      # If you use an ENVIRONMENT placeholder in XML, set it here
+      ENVIRONMENT: main
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils postgresql-client
+
+      - name: Make scripts executable
+        run: chmod +x database-scripts/execute.sh
+
+      - name: Run execute.sh
+        run: ./database-scripts/execute.sh
